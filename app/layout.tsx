@@ -2,6 +2,7 @@ import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import { Archivo, Inter } from 'next/font/google'
 import { LenisScrollProvider } from '@/components/lenis-scroll-provider'
+import { MinimalTechFooter } from '@/components/ui/motion-footer'
 import './globals.css'
 
 const archivo = Archivo({
@@ -57,9 +58,12 @@ export default function RootLayout({
       <body className="antialiased">
         <LenisScrollProvider lerp={0.08} duration={1.2} wheelMultiplier={1} touchMultiplier={1}>
           {children}
+          
+          <MinimalTechFooter />
         </LenisScrollProvider>
+        
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
-    </html>
+    </html> 
   )
 }

@@ -1,6 +1,7 @@
 import BorderGlow from "./BorderGlow"
 import { ScrollReveal } from "./scroll-reveal"
 import { TechStackBar } from "./tech-stack-bar";
+import MarqueeLoop from "@/components/ui/marqueeLoop"
 
 export function About() {
   const proves: { title: string; description: string }[] = [
@@ -162,8 +163,8 @@ export function About() {
         </div>
       </div>
     </section>
-    <div className=" relative  bottom-0 z-999">
-              <TechStackBar />
+    <div className=" relative bottom-0 z-999">
+              <MarqueeLoop />
      </div>
     </>
   )

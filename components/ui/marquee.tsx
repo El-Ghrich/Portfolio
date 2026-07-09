@@ -89,6 +89,7 @@ export function Marquee({
           }
         `}
       </style>
+      
       <div
         {...props}
         className={cn(
@@ -101,6 +102,7 @@ export function Marquee({
           className,
         )}
       >
+        
         {Array(repeat)
           .fill(0)
           .map((_, i) => (
