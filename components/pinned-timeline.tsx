@@ -63,7 +63,7 @@ type Project = (typeof projects)[number]
 export default function PinnedTimeline() {
   const sectionRef = useRef<HTMLElement>(null)
   const { scrollProgress } = useScrollProgress(sectionRef)
-  const trackY = useTransform(scrollProgress, [0, 1], ["8%", "-8%"])
+  const trackY = useTransform(scrollProgress, [0, 1], ["8%", "0%"])
   const lineScale = useTransform(scrollProgress, [0, 1], [0, 1])
 
   return (
@@ -135,7 +135,7 @@ function TimelineCard({
   const enter = start + seg * 0.28
   const exit = end - seg * 0.28
 
-  const y = useTransform(progress, [start, enter, exit, end], [160, 0, 0, -160])
+  const y = useTransform(progress, [start, enter, exit, end], [100, 0, 0, -100])
   const opacity = useTransform(progress, [start, enter, exit, end], [0, 1, 1, 0])
   const scale = useTransform(progress, [start, enter, exit, end], [0.85, 1, 1, 0.9])
 

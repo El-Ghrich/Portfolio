@@ -5,7 +5,7 @@
   import Image from 'next/image';
 
   const heroTheme: ShootingStarsGridTheme = {
-    gridLineColor: "color-mix(in srgb, var(--foreground) 8%, transparent)",
+    gridLineColor: "color-mix(in srgb, var(--foreground) 8%, #ffffff)",
     overlayColor: "transparent 0%, transparent 100%",
     glowPrimary: "oklch(0.72 0.18 55 / 0.22)",
     glowSecondary: "oklch(0.72 0.18 55 / 0.12)",
@@ -21,7 +21,7 @@
       <>
       <section className="relative z-0 min-h-screen w-full overflow-hidden bg-background text-foreground ">
         <ShootingStarsGrid
-          asBackground
+        asBackground
           showGrid
           showStaticStars
           shootingStarCount={6}
@@ -41,7 +41,7 @@
         </div>
 
         {/* Photo (transparent cutout) */}
-        <div className="absolute inset-y-0 right-0 z-10 flex h-full w-full items-end justify-center md:w-[60%] md:justify-end">
+        <div className="absolute top-[30%] right-0 z-10 flex h-[70%] w-full items-end justify-center md:inset-y-0 md:h-full md:w-[60%] md:justify-end">
           <div className="animate-hero-image-in relative flex h-full w-full items-end justify-center [animation-delay:200ms]">
             {/* Soft ground shadow under the portrait */}
             <div
@@ -73,14 +73,14 @@
             className="pointer-events-none absolute inset-0 md:hidden"
             style={{
               background:
-                "linear-gradient(180deg, var(--background) 8%, transparent 45%)",
+                "linear-gradient(180deg, var(--background) 10%, transparent 55%)",
             }}
           />
         </div>
         
 
         {/* Content */}
-        <div className="relative z-20 mx-auto ml-0 md:ml-20 sm:ml-20 flex min-h-screen max-w-8xl flex-col justify-center px-6 sm:px-10">
+        <div className="relative z-20 mx-auto flex min-h-screen max-w-8xl flex-col justify-center px-6 sm:px-10 md:ml-20">
           <div className="max-w-xl">
             <p className="animate-hero-fade mb-6 flex items-center gap-3 text-sm font-medium uppercase tracking-[0.35em] text-primary [animation-delay:100ms]">
               <span className="h-px w-8 bg-primary" />
@@ -91,12 +91,12 @@
               <span className="animate-hero-rise block text-6xl sm:text-7xl lg:text-8xl [animation-delay:200ms]">
                 Software
               </span>
-              <span className="animate-hero-rise block text-6xl text-primary sm:text-7xl lg:text-8xl [animation-delay:340ms]">
+              <span className="animate-hero-rise block text-6xl font-black text-primary sm:text-7xl lg:text-8xl [animation-delay:340ms]">
                 Engineer
               </span>
             </h1>
 
-            <p className="animate-hero-rise mt-6 max-w-md font-body text-lg leading-relaxed text-muted-foreground [animation-delay:5500ms]">
+            <p className="animate-hero-rise mt-6 max-w-md font-body text-base leading-relaxed text-muted-foreground sm:text-lg [animation-delay:5500ms]">
               Architecting unshakeable systems. Bridging the gap between impenetrable backend infrastructure and seamless, human-centric interfaces.
             </p>
 
@@ -123,13 +123,10 @@
 
         {/* Scroll indicator */}
         <div className="animate-hero-fade absolute inset-x-0 bottom-8 z-20 flex flex-col items-center gap-2 [animation-delay:1000ms]">
-          <div className="animate-scroll-bob flex h-9 w-6 items-start justify-center rounded-full border border-primary/50 p-1.5">
+          <div className="animate-scroll-bob flex h-12 w-8 items-start justify-center rounded-full border border-primary/50 p-1.5">
             <span className="animate-scroll-dot h-1.5 w-1.5 rounded-full bg-primary" />
           </div>
-          <span className="flex items-center gap-1.5 text-[0.7rem] font-medium uppercase tracking-[0.25em] text-muted-foreground">
-            <Mouse className="h-3.5 w-3.5" />
-            Scroll
-          </span>
+          
         </div>
 
         {/* Tech stack bar */}

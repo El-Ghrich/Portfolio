@@ -180,7 +180,7 @@ export function ShootingStarsGrid({
   children,
   starCount = 48,
   shootingStarCount = 6,
-  gridSize = 44,
+  gridSize = 64,
   speed = "normal",
   glow = true,
   className,
@@ -231,7 +231,7 @@ export function ShootingStarsGrid({
             "[background-size:var(--shooting-stars-grid-size)_var(--shooting-stars-grid-size)]",
           )}
           style={{
-            backgroundImage: `linear-gradient(to_right,${theme.gridLineColor}_1px,transparent_1px),linear-gradient(to_bottom,${theme.gridLineColor}_1px,transparent_1px)`,
+            backgroundImage: `linear-gradient(to_right,${theme.gridLineColor} 1px,transparent 1px),linear-gradient(to_bottom,${theme.gridLineColor} 1px,transparent 1px)`,
           }}
         />
       )}
