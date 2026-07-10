@@ -18,8 +18,8 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Software Engineer — Portfolio',
-  description: 'Building robust and secure systems. Explore projects and download my resume.',
+  title: 'Salman El-Ghrich // Software Engineer',
+  description: 'Full-Stack Software Engineer specializing in System Design, Application Security, and high-performance Next.js architectures. View my portfolio and technical CV.',
   generator: 'v0.app',
   icons: {
     icon: [

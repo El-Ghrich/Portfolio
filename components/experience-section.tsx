@@ -1,3 +1,4 @@
+'use client'
 import PinnedTimeline from "./pinned-timeline"
 
 export function ExperienceSection() {
@@ -13,7 +14,7 @@ export function ExperienceSection() {
                 </p>
                 </div>
           <h1 className="my-6 font-sans text-4xl font-black uppercase leading-[1.2] tracking-tight sm:text-6xl">
-            Building systems that <i> <span className="text-primary">scale.</span></i>
+            Architecting systems that <i> <span className="text-primary">scale.</span></i>
           </h1>
           <p className="mt-6 text-pretty text-white/50 md:text-lg">
             Keep scrolling to move through the timeline.
@@ -24,3 +25,5 @@ export function ExperienceSection() {
     </section>
   )
 }
+
+export default ExperienceSection;

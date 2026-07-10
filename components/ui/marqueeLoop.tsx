@@ -35,11 +35,11 @@ export default function MarqueeLoop() {
           <div aria-hidden className="pointer-events-none absolute inset-x-0 bottom-0 h-px overflow-hidden">
             <div className="h-full w-[200%] animate-shimmer bg-gradient-to-r from-primary/10 via-primary/30 to-primary/10" />
           </div>
-          <div className='flex gap-2.5 px-5 md:px-15'>
-            <p className=" flex items-center gap-4 text-[14px] font-body tracking-[0.2em] text-primary">
+          <div className='flex  gap-2.5 px-5 md:px-15'>
+            <p className=" flex items-center gap-4  text-[14px] font-body tracking-[0.4em] text-primary">
                   
                   <span className="h-px w-7 bg-primary" />
-                  Disciplines
+                  Deciplines
                 </p>
 
           <Marquee className="[--duration:60s] p-0 [mask-image:linear-gradient(to_right,transparent_0%,black_10%,black_90%,transparent_100%)] overflow-hidden" >

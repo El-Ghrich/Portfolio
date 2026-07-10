@@ -342,7 +342,7 @@ export function MinimalTechFooter  () {
               className="footer-text-glow mb-12 text-center text-5xl font-black tracking-tighter md:text-7xl pb-3"
             >
               Let's Build Something <br className="hidden sm:block" />
-              <span className="text-primary/80">Extraordinary</span>
+              <span className="text-primary/80">Unshakeable.</span>
             </h2>
 
             <div ref={linksRef} className="flex w-full flex-col items-center gap-6">
@@ -355,7 +355,7 @@ export function MinimalTechFooter  () {
                   <svg className="h-6 w-6 text-muted-foreground transition-colors group-hover:text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  Contact Me
+                  Initiate Contact
                 </MagneticButton>
 
                 <MagneticButton 
@@ -367,7 +367,7 @@ export function MinimalTechFooter  () {
                   <svg className="h-6 w-6 text-muted-foreground transition-colors group-hover:text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
-                  Download Resume
+                  Download CV [PDF]
                 </MagneticButton>
 
                 
@@ -407,9 +407,7 @@ export function MinimalTechFooter  () {
 
             <div className="flex items-center gap-4 order-2 md:order-2">
               <span className="text-xs text-muted-foreground/40 flex items-center gap-2">
-                Built with
-                <span className="text-primary/60">❤</span>
-                using Next.js & Tailwind
+                Engineered in Next.js. Styled with Tailwind CSS.
               </span>
             </div>
 

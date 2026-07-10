@@ -1,44 +1,33 @@
   import Link from "next/link"
   import { ArrowRight, Download, Mouse } from "lucide-react"
   import { TechStackBar } from "./tech-stack-bar"
+  import { ShootingStarsGrid, type ShootingStarsGridTheme } from "./ui/background"
+  import Image from 'next/image';
+
+  const heroTheme: ShootingStarsGridTheme = {
+    gridLineColor: "color-mix(in srgb, var(--foreground) 8%, transparent)",
+    overlayColor: "transparent 0%, transparent 100%",
+    glowPrimary: "oklch(0.72 0.18 55 / 0.22)",
+    glowSecondary: "oklch(0.72 0.18 55 / 0.12)",
+    starColor: "oklch(0.72 0.18 55 / 0.4)",
+    starShadow: "oklch(0.72 0.18 55 / 0.25)",
+    shootingStarFrom: "oklch(0.72 0.18 55 / 0.18)",
+    shootingStarTo: "rgba(255,255,255,0.92)",
+    shootingStarGlow: "oklch(0.72 0.18 55 / 0.35), oklch(0.72 0.18 55 / 0.1)",
+  };
 
   export function Hero() {
     return (
       <>
-      <section className="relative min-h-screen w-full overflow-hidden bg-background text-foreground ">
-        {/* Warm orange ambient glow behind the portrait */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(60% 60% at 72% 55%, oklch(0.72 0.18 55 / 0.22) 0%, oklch(0.72 0.18 55 / 0.06) 38%, transparent 70%)",
-          }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(50% 50% at 20% 40%, oklch(0.72 0.18 55 / 0.32) 0%, oklch(0.72 0.18 55 / 0.06) 48%, transparent 80%)",
-          }}
-        />
-
-        {/* Fade grid background */}
-        <div
-          aria-hidden
-          className="pointer-events-none absolute inset-0"
-          style={{
-            backgroundImage: [
-              "repeating-linear-gradient(0deg, transparent, transparent 1px, color-mix(in srgb, var(--foreground) 5%, transparent) 1px, color-mix(in srgb, var(--foreground) 5%, transparent) 2px)",
-              "repeating-linear-gradient(90deg, transparent, transparent 1px, color-mix(in srgb, var(--foreground) 5%, transparent) 1px, color-mix(in srgb, var(--foreground) 5%, transparent) 2px)",
-            ].join(", "),
-            backgroundSize: "64px 64px",
-            maskImage:
-              "radial-gradient(ellipse 70% 60% at 50% 45%, black 20%, transparent 65%)",
-            WebkitMaskImage:
-              "radial-gradient(ellipse 70% 60% at 50% 45%, black 20%, transparent 65%)",
-          }}
+      <section className="relative z-0 min-h-screen w-full overflow-hidden bg-background text-foreground ">
+        <ShootingStarsGrid
+          asBackground
+          showGrid
+          showStaticStars
+          shootingStarCount={6}
+          gridSize={64}
+          glow
+          theme={heroTheme}
         />
 
         {/* Single faded ENGINEER wordmark in the background */}
@@ -59,10 +48,14 @@
               aria-hidden
               className="pointer-events-none absolute bottom-[6%] left-1/2 h-16 w-3/5 -translate-x-1/2 rounded-[50%] bg-black/50 blur-2xl md:left-[55%]"
             />
-            <img
+            <Image
               src="/me.png"
               alt="Portrait of the software engineer wearing a dark suit"
-              className="relative h-auto max-h-[92%] w-auto max-w-none object-contain drop-shadow-2xl"
+              width={800}
+              height={800}
+              priority
+              quality={100}
+              className="relative h-auto w-full max-h-[100%] max-w-none object-contain drop-shadow-2xl"
             />
           </div>
           {/* Fade the bottom edge into the background */}
@@ -104,8 +97,7 @@
             </h1>
 
             <p className="animate-hero-rise mt-6 max-w-md font-body text-lg leading-relaxed text-muted-foreground [animation-delay:5500ms]">
-              Building robust and secure systems that scale — from resilient
-              backends to polished, human-centered interfaces.
+              Architecting unshakeable systems. Bridging the gap between impenetrable backend infrastructure and seamless, human-centric interfaces.
             </p>
 
             <div className="animate-hero-rise mt-10 flex flex-col gap-4 sm:flex-row [animation-delay:720ms]">
@@ -113,7 +105,7 @@
                 href="#projects"
                 className="group inline-flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground transition-transform duration-300 hover:scale-[1.03] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
-                Explore Projects
+                Explore Architecture
                 <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
               </Link>
 
@@ -123,7 +115,7 @@
                 className="group inline-flex items-center justify-center gap-2 rounded-full border border-primary/40 bg-transparent px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur-sm transition-colors duration-300 hover:border-primary hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
               >
                 <Download className="h-4 w-4 text-primary transition-transform duration-300 group-hover:translate-y-0.5" />
-                Download Resume
+                View Technical CV
               </a>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import BorderGlow from "./BorderGlow"
+import Image from 'next/image';
 import { ScrollReveal } from "./scroll-reveal"
 import { TechStackBar } from "./tech-stack-bar";
 import MarqueeLoop from "@/components/ui/marqueeLoop"
@@ -42,7 +43,7 @@ export function About() {
                     I am a Full-Stack Engineer who believes a flawless user interface and impenetrable security are not mutually exclusive. While I obsess over the pixel-perfect details and fluid interactions of the frontend, I treat System Design and Application Security as indispensable absolutes.
                   </p>
                   <p>
-                    A beautiful application is a liability if its architecture is fragile. I don't compromise between form and function, I engineer the seamless experiences users expect, backed by the rigorous infrastructure production demands.
+                    A beautiful application is a liability if its architecture is fragile. I don't compromise between form and function. I engineer the seamless experiences users expect, backed by the rigorous infrastructure production demands.
                   </p>
                 </div>
               </div>
@@ -107,11 +108,13 @@ export function About() {
                     }}
                   />
                   <div className="p-2 z-10">
-                    <img
-                      src="/me.png"
-                      alt="About the software engineer"
-                      className="h-auto w-full max-w-md object-contain z-10"
-                    />
+                    <Image
+                    src="/me.png"
+                    alt="About the software engineer"
+                    width={800}
+                    height={800}
+                    className="h-auto w-full max-w-md object-contain z-10"
+                  />
                   </div>
                 </BorderGlow>
               </div>
@@ -122,13 +125,13 @@ export function About() {
                 {/* Based In */}
                 <div className="group  border-b border-primary/5 pb-4 transition-all hover:border-primary/20">
                   <span className="text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground/70">
-                    Based In
+                    Located In
                   </span>
                   <p className="mt-1 font-sans text-base font-bold text-foreground">
                     Tangier, Morocco
                   </p>
                   <p className="text-sm text-muted-foreground/80">
-                    14.2595° N · 5.8210° W
+                    35.7595° N · 5.8340° W
                   </p>
                 </div>
 
@@ -138,7 +141,7 @@ export function About() {
                     Background
                   </span>
                   <p className="mt-1 font-sans text-base font-bold text-foreground">
-                    4th Years At ENSA tangier
+                    4th-Year Engineering (Génie Informatique) · ENSA Tanger
                   </p>
                   <p className="text-sm text-muted-foreground/80">
                     Internship @ SEBN MA · Founding Readov.com
@@ -148,13 +151,13 @@ export function About() {
                 {/* Open To */}
                 <div className="group transition-all hover:border-primary/20">
                   <span className="text-[0.6rem] font-semibold uppercase tracking-[0.2em] text-muted-foreground/70">
-                    Open To
+                    Status
                   </span>
                   <p className="mt-1 font-sans text-base font-bold text-foreground">
-                    Freelance Work
+                    Seeking Technical PFA Internship (July 2026)
                   </p>
                   <p className="text-sm text-muted-foreground/80">
-                    Full-Stack Applications 
+                    Full-Stack / Tech-Lead Roles 
                   </p>
                 </div>
               </div>
@@ -169,3 +172,4 @@ export function About() {
     </>
   )
 }
+export default About;

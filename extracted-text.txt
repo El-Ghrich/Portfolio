@@ -1,0 +1,149 @@
+=== components/hero.tsx ===
+
+1.  "Engineer"                                (line 52, background wordmark)
+2.  "Portfolio"                               (line 100, label)
+3.  "Software"                                (line 105, heading)
+4.  "Engineer"                                (line 108, heading)
+5.  "Building robust and secure systems that scale — from resilient backends to polished, human-centered interfaces."  (lines 113-114)
+6.  "Explore Projects"                        (line 122, button)
+7.  "Download Resume"                         (line 132, button)
+8.  "Scroll"                                  (line 145, scroll indicator)
+9.  alt="Portrait of the software engineer wearing a dark suit"  (line 66)
+
+
+=== components/about.tsx ===
+
+1.  "01"                                      (line 34, number)
+2.  "ENGINEERING PHILOSOPHY"                  (line 36, label)
+3.  "Beautiful"                               (line 39, italic highlight)
+4.  "on the surface."                         (line 39)
+5.  "Unshakeable"                             (line 39, italic highlight)
+6.  "underneath."                             (line 39)
+7.  "I am a Full-Stack Engineer who believes a flawless user interface and impenetrable security are not mutually exclusive. While I obsess over the pixel-perfect details and fluid interactions of the frontend, I treat System Design and Application Security as indispensable absolutes."  (line 43)
+8.  "A beautiful application is a liability if its architecture is fragile. I don't compromise between form and function, I engineer the seamless experiences users expect, backed by the rigorous infrastructure production demands."  (line 46)
+9.  "PROVEN EXPERIENCE"                       (line 57, label)
+
+Variable `proves` array (3 items):
+  Item 0:
+    - title: "CV Generator"
+    - description: "Multi-agent RAG architecture · 20+ microservices · 6 databases"
+  Item 1:
+    - title: "Readov"
+    - description: "Monolith to Edge migration · Flask/Jinja to Next.js"
+  Item 2:
+    - title: "GrowTrack"
+    - description: "Engineered production JWT security layer & authentication"
+
+10. alt="About the software engineer"         (line 113)
+11. "Based In"                                (line 128, vitals label)
+12. "Tangier, Morocco"                        (line 131, vitals value)
+13. "14.2595° N · 5.8210° W"                 (line 134, coordinates)
+14. "Background"                              (line 141, vitals label)
+15. "4th Years At ENSA tangier"               (line 144, vitals value)
+16. "Internship @ SEBN MA · Founding Readov.com"  (line 147, vitals value)
+17. "Open To"                                 (line 154, vitals label)
+18. "Freelance Work"                          (line 157, vitals value)
+19. "Full-Stack Applications"                 (line 160, vitals value)
+
+
+=== components/experience-section.tsx ===
+
+1.  "02"                                      (line 11, number)
+2.  "PROJECTS"                                (line 13, label)
+3.  "Building systems that"                   (line 17, heading)
+4.  "scale."                                  (line 17, italic highlight)
+5.  "Keep scrolling to move through the timeline."  (line 20)
+
+
+=== components/pinned-timeline.tsx ===
+
+1.  "Scroll"                                  (line 83, scroll indicator)
+
+Variable `projects` array (5 items):
+
+  CV Generator (index 0):
+    - year: "2026"
+    - title: "CV Generator"
+    - description: "An automated, job-targeted CV platform driven by a multi-agent RAG architecture, +20 Microservices, +6 Databases. Provisioned infrastructure-as-code (Terraform/Ansible) for local deployment with AWS migration pathways."
+    - techStack: ["FastAPI", ".NET", "Angular", "Terraform", "AWS"]
+
+  Readov (index 1):
+    - year: "2026"
+    - title: "Readov"
+    - description: "Led the strategic migration of a monolithic Flask application with Jinja templates into a high-performance Next.js architecture, leveraging Edge Functions for global scalability."
+    - techStack: ["Next.js", "Edge Functions", "Supabase", "Flask"]
+
+  Roadmap Builder (index 2):
+    - year: "2025"
+    - title: "Roadmap Builder"
+    - description: "Led the full project lifecycle for a scalable management platform. Implemented a RAG-powered intelligent search agent specifically designed to surface build progress and metrics for roadmap creators."
+    - techStack: ["React", "TypeScript", "Express", "Docker"]
+
+  GrowTrack (index 3):
+    - year: "2025"
+    - title: "GrowTrack"
+    - description: "Architected the production security layer, designing and implementing a robust JWT-based authentication system within an Agile/Scrum environment."
+    - techStack: ["Vue.js", "Express.js", "JWT Auth", "PostgreSQL"]
+
+  Turbo Bites (index 4):
+    - year: "2025"
+    - title: "Turbo Bites"
+    - description: "A high-performance restaurant platform featuring aggressive responsive design, interactive menus, and geolocation routing. Engineered for sub-second load times on mobile edge networks."
+    - techStack: ["Next.js", "Tailwind CSS", "Framer Motion"]
+
+
+=== components/ui/marqueeLoop.tsx ===
+
+1.  "Disciplines"                             (line 42, label)
+
+Variable `phrases` array (12 items):
+  - "Production React"
+  - "Backend Engineering"
+  - "System Design & Optimisation"
+  - "Enterprise Scale"
+  - "TypeScript · Next.js"
+  - "DevSecOps · Application Security"
+  - "Cloudflare · Edge Computing"
+  - "Spring Boot · Node.js"
+  - "PostgreSQL · MongoDB"
+  - "RESTful APIs · Microservices"
+  - "Containerisation · Docker · Kubernetes"
+  - "CI/CD Pipelines · GitHub Actions"
+
+
+=== components/ui/motion-footer.tsx ===
+
+1.  "Full-Stack Engineer"                     (line 242, marquee)
+2.  "✦"                                       (lines 243, 245, 247, 249, 251, 253, 255)
+3.  "System Design"                           (line 244, marquee)
+4.  "DevSecOps"                               (line 246, marquee)
+5.  "Cloud Architecture"                      (line 248, marquee)
+6.  "Performance Optimization"                (line 250, marquee)
+7.  "TypeScript"                              (line 252, marquee)
+8.  "React · Next.js"                         (line 254, marquee)
+9.  "EL-GHRICH"                               (line 329, giant background text)
+10. "Let's Build Something"                   (line 344, heading)
+11. "Extraordinary"                           (line 345, heading highlight)
+12. "Contact Me"                              (line 358, button)
+13. "Download Resume"                         (line 370, button)
+14. "GitHub"                                  (line 383, link)
+15. "LinkedIn"                                (line 392, link)
+16. "Blog"                                    (line 399, link)
+17. "Built with"                              (line 410, footer text)
+18. "❤"                                       (line 411, heart)
+19. "using Next.js & Tailwind"               (line 412, footer text)
+
+
+=== app/layout.tsx ===
+
+1.  title: "Software Engineer — Portfolio"    (line 21)
+2.  description: "Building robust and secure systems. Explore projects and download my resume."  (line 22)
+
+
+=== components/tech-stack-bar.tsx ===
+
+Variable `techLogos` titles (4 items):
+  - "React"                                   (line 7)
+  - "Next.js"                                 (line 8)
+  - "TypeScript"                              (line 9)
+  - "Tailwind CSS"                            (line 10)

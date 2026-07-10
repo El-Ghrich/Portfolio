@@ -14,7 +14,7 @@ const projects = [
   {
     year: "2026",
     title: "CV Generator",
-    description: "An automated, job-targeted CV platform driven by a multi-agent RAG architecture, +20 Microservices, +6 Databases. Provisioned infrastructure-as-code (Terraform/Ansible) for local deployment with AWS migration pathways.",
+    description: "An automated, job-targeted CV platform driven by a multi-agent RAG architecture, featuring 20+ microservices and 6 databases. Provisioned infrastructure-as-code (Terraform/Ansible) for local deployment with AWS migration pathways.",
     techStack: ["FastAPI", ".NET", "Angular", "Terraform", "AWS"],
     image: "/projects/CV.png", 
     links: { live: "", github: "https://github.com" },

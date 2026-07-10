@@ -1,7 +1,8 @@
+'use client'
+import dynamic from "next/dynamic";
 import { Hero } from "@/components/hero"
-import { TechStackBar } from "@/components/tech-stack-bar"
-import { About } from "@/components/about"
-import { ExperienceSection } from "@/components/experience-section"
+const About = dynamic(() => import("@/components/about"), {ssr : true});
+const ExperienceSection = dynamic(() => import("@/components/experience-section"), {ssr : false});
 import { ScrollReveal } from "@/components/scroll-reveal"
 
 export default function Page() {
